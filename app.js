@@ -8,7 +8,7 @@ g.ip = '0.0.0.0';
 
 app.get('/', function(req, res){
   var q = (req.query.q||'');
-  res.send('hello world<br />'+q);
+  res.send('hello, github world<br />'+q);
 });
 
 app.listen(g.port, g.ip);
