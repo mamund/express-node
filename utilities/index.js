@@ -29,15 +29,27 @@ exports.init = function() {
     
     switch(method) {
       case 'add':
+      case 'a':
+      case '+':
         rtn = arg1+arg2;
         break;
       case 'subtract':
+      case 'sub':
+      case 's':
+      case '-':
         rtn = arg1-arg2;
         break;
       case 'multiply':
+      case 'mult':
+      case 'mul':
+      case 'm':
+      case '*':
         rtn = arg1*arg2;
         break;
       case 'divide':
+      case 'div':
+      case 'd':
+      case '/':
         rtn = arg1/arg2;
         break;
       default:
