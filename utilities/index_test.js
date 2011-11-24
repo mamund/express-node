@@ -1,8 +1,8 @@
-/* until test */
+/* util unit tests */
 
 var test = function() {
 
-  var u = require('./utilities').init();
+  var u = require('./index').init();
 
   function run() {
     console.log(u.addit(3,2));

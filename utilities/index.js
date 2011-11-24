@@ -6,6 +6,7 @@ usage:
   var util = require('./utilities'),init();
   util.addit(1,2);
 */
+
 exports.init = function() {
   
   var g = {};

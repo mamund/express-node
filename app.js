@@ -9,7 +9,7 @@ g.ip = '0.0.0.0';
 
 app.get('/', function(req, res){
   var q = (req.query.q||'');
-  var r = util.addit(3,2);
+  var r = util.compute('multiply',3,2);
   res.send('hello, github world<br />'+r);
 });
 
