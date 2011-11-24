@@ -6,10 +6,11 @@ var test = function() {
   var u = require('./index').init();
 
   function run() {
+    console.log(new Date()+' start');
     simple();
     showMessage();
     compute();
-    console.log('done');
+    console.log(new Date()+' end');
   }
 
   function simple() {
@@ -42,6 +43,11 @@ var test = function() {
     assert.equal(u.compute('-',2,2),0);
     assert.equal(u.compute('*',2,2),4);
     assert.equal(u.compute('/',2,2),1);
+
+    assert.notEqual(u.compute('+',2,2),2);
+    assert.notEqual(u.compute('-',2,2),1);
+    assert.notEqual(u.compute('*',2,2),3);
+    assert.notEqual(u.compute('/',2,2),2);
   }
   
   var that = {};
